@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_VTC-BootSTRAP5</name>
+    <version>1.0.0</version>
+    <description>System Plugin to load latest Bootstrap 5</description>
+    <files>
+        <filename plugin="vtc-bootstrap5">vtc-bootstrap5.php</filename>
+        <folder>assets</folder>
+    </files>
+</extension>
