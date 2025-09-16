@@ -1,0 +1,8 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0.5rem 1rem;
+}

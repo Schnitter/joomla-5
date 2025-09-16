@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="5.0" method="upgrade">
+    <name>mod_vtc-bootstrap5</name>
+    <author>Mark Lehmbach</author>
+    <version>1.0.0</version>
+    <description>Bootstrap Navigation Modul mit automatischem JS-Nachladen über Joomla WebAssetManager</description>
+
+    <files>
+        <filename module="mod_vtc-bootstrap5">mod_vtc-bootstrap5.php</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>media</folder>
+    </files>
+</extension>
