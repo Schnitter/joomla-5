@@ -3,7 +3,7 @@
     <name>mod_vtec-jumbotron5</name>
     <version>1.0.0</version>
     <description>VTEC Jumbotron Modul mit Hintergrundbild, Höhe und Container-Optionen</description>
-    <author>ChatGPT</author>
+    <author>Mark Lehmbach</author>
     <files>
         <filename module="mod_vtec-jumbotron5">mod_vtec-jumbotron5.php</filename>
         <folder>tmpl</folder>
