@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+    <name>mod_vtec-jumbotron5</name>
+    <version>1.0.0</version>
+    <description>VTEC Jumbotron Modul mit Hintergrundbild, Höhe und Container-Optionen</description>
+    <author>ChatGPT</author>
+    <files>
+        <filename module="mod_vtec-jumbotron5">mod_vtec-jumbotron5.php</filename>
+        <folder>tmpl</folder>
+        <folder>media</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Jumbotron Einstellungen">
+                <field name="bgimage" type="media" label="Hintergrundbild" preview="true" />
+                <field name="height" type="text" label="Höhe (z.B. 400px oder 60vh)" default="400px" />
+                <field name="container" type="list" label="Container-Typ" default="container">
+                    <option value="container">Container</option>
+                    <option value="container-fluid">Container Fluid</option>
+                </field>
+                <field name="content" type="textarea" label="Inhalt" rows="6" />
+                <field name="bootstrapcheck" type="list" label="Bootstrap-Prüfung" default="console">
+                    <option value="none">Keine Prüfung</option>
+                    <option value="console">Konsole-Warnung</option>
+                    <option value="alert">Alert im Browser</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
