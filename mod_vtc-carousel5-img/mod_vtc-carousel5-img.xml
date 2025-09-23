@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+    <name>VTC Carousel 5 (nur Bilder)</name>
+    <author>Mark Lehmbach</author>
+    <version>1.0.0</version>
+    <description>Ein Bootstrap 5.3.8 Carousel Modul für Joomla 5 (nur Bilder, ohne Titel/Beschreibung)</description>
+    <files>
+        <filename module="mod_vtc-carousel5-img">mod_vtc-carousel5-img.php</filename>
+        <folder>tmpl</folder>
+        <folder>media</folder>
+        <filename>mod_vtc-carousel5-img.xml</filename>
+    </files>
+    <media destination="mod_vtc-carousel5-img" folder="media">
+        <folder>css</folder>
+    </media>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="Carousel Einstellungen">
+                <field name="images" type="textarea" label="Bilder (ein Bild pro Zeile, nur URL)" rows="10"/>
+                <field name="interval" type="number" default="5000" label="Slide Interval (ms)"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
