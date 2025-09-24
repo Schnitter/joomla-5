@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="5.0">
+    <name>plg_system_vtc-cookieconsent</name>
+    <author>Mark Lehmbach</author>
+    <version>5.0.0</version>
+    <description>Cookie Consent Plugin mit Gruppen, Modal & Einstellungs-Button</description>
+    <files>
+        <filename plugin="vtc-cookieconsent">vtc-cookieconsent.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_vtc-cookieconsent.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_vtc-cookieconsent.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="showSettingsButton" type="radio" default="1" label="Show settings button" description="Show floating settings button for cookie preferences">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="buttonPosition" type="list" default="right" label="Button Position" description="Floating button position">
+                    <option value="right">Bottom Right</option>
+                    <option value="left">Bottom Left</option>
+                </field>
+                <field name="blocked_statistic" type="text" default="www.google-analytics.com" label="Statistic domains" description="Comma-separated domains to block for statistics" />
+                <field name="blocked_design" type="text" default="fonts.googleapis.com,cdn.jsdelivr.net" label="Design domains" description="Comma-separated domains to block for design" />
+                <field name="blocked_marketing" type="text" default="youtube.com,google.com/maps" label="Marketing domains" description="Comma-separated domains to block for marketing" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
