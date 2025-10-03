@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>mod_vtc_cards_multilang</name>
+    <author>Mark Lehmbach</author>
+    <version>1.4.0</version>
+    <description>@MOD_VTC_CARDS_DESC@</description>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="MOD_VTC_CARDS_SETTINGS">
+                <field name="container_type" type="list" default="container" label="MOD_VTC_CARDS_CONTAINER_TYPE" description="MOD_VTC_CARDS_CONTAINER_TYPE_DESC">
+                    <option value="container">container</option>
+                    <option value="container-fluid">container-fluid</option>
+                    <option value="none">none</option>
+                </field>
+                <field name="show_desktop" type="radio" default="1" label="MOD_VTC_CARDS_SHOW_DESKTOP" description="MOD_VTC_CARDS_SHOW_DESKTOP_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="show_tablet" type="radio" default="0" label="MOD_VTC_CARDS_SHOW_TABLET" description="MOD_VTC_CARDS_SHOW_TABLET_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="show_mobile" type="radio" default="0" label="MOD_VTC_CARDS_SHOW_MOBILE" description="MOD_VTC_CARDS_SHOW_MOBILE_DESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="cards" label="MOD_VTC_CARDS_LIST">
+                <field name="cards" type="subform" formsource="cards.xml" label="MOD_VTC_CARDS_ITEMS" multiple="true" />
+            </fieldset>
+        </fields>
+    </config>
+
+    <files>
+        <filename module="mod_vtc_cards_multilang">mod_vtc_cards.php</filename>
+        <filename>mod_vtc_cards.xml</filename>
+        <filename>cards.xml</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+</extension>

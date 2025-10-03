@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="cards">
+        <field name="image" type="media" label="MOD_VTC_CARD_IMAGE" />
+        <field name="title" type="text" label="MOD_VTC_CARD_TITLE" language="*" default="MOD_VTC_TITLE_1" />
+        <field name="text" type="textarea" label="MOD_VTC_CARD_TEXT" language="*" default="MOD_VTC_TEXT_1" />
+    </fields>
+</form>
